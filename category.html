@@ -239,24 +239,5 @@
     </div>
   </footer>
 
-
-  <script src="script.js"></script>
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const urlParams = new URLSearchParams(window.location.search);
-      const category = urlParams.get('c');
-      if (category) {
-        // Set page title (if not already handled by fetchProducts internally)
-        const titleEl = document.getElementById('page-title');
-        if (titleEl) {
-          titleEl.textContent = category.charAt(0).toUpperCase() + category.slice(1);
-          titleEl.setAttribute('data-category', category); 
-        }
-        fetchProducts(category);
-      } else {
-        window.location.href = 'index.html#products';
-      }
-    });
-  </script>
 </body>
 </html>

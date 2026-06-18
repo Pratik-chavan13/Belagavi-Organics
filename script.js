@@ -495,11 +495,20 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // 10. CATEGORY PAGE LOGIC
-  if (document.getElementById('category-grid')) {
+  const categoryGrid = document.getElementById('category-grid');
+  if (categoryGrid) {
       const urlParams = new URLSearchParams(window.location.search);
-      const categoryQuery = urlParams.get('c') || 'products';
+      const categoryQuery = urlParams.get('c');
+      if (!categoryQuery) {
+          window.location.href = 'index.html#products';
+          return;
+      }
       const pageTitle = document.getElementById("page-title");
-      if (pageTitle) pageTitle.textContent = decodeURIComponent(categoryQuery);
+      if (pageTitle) {
+          const decoded = decodeURIComponent(categoryQuery);
+          pageTitle.textContent = decoded.charAt(0).toUpperCase() + decoded.slice(1);
+          pageTitle.setAttribute('data-category', categoryQuery);
+      }
       fetchProducts(categoryQuery);
   }
 
@@ -625,9 +634,8 @@ async function fetchProducts(categoryQuery) {
 
           let actionHtml = '';
           if (isAvailable) {
-              const whatsappMsg = `Namaste,\n\nI am interested in "${name}" ${price ? `(₹${price}${unit ? " / " + unit : ""})` : ""} from Belagavi Organics.\n\nPlease share full product details.`;
               actionHtml = `
-                <button class="btn-buy-now" aria-label="Buy Now" onclick="openWhatsApp('${escapeHtml(whatsappMsg)}')">
+                <button class="btn-buy-now" aria-label="Buy Now">
                   <span class="material-symbols-outlined" style="font-size:18px;">chat</span> ${buyNowText}
                 </button>`;
           }
@@ -647,6 +655,16 @@ async function fetchProducts(categoryQuery) {
               </div>
           `;
           grid.appendChild(card);
+
+          if (isAvailable) {
+              const btn = card.querySelector('.btn-buy-now');
+              if (btn) {
+                  const whatsappMsg = `Namaste,\n\nI am interested in "${name}" ${price ? `(₹${price}${unit ? " / " + unit : ""})` : ""} from Belagavi Organics.\n\nPlease share full product details.`;
+                  btn.addEventListener('click', () => {
+                      openWhatsApp(whatsappMsg);
+                  });
+              }
+          }
           count++;
         });
 
