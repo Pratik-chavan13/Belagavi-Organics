@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Why Choose Belagavi Organics? | Pure. Ethical. Organic.</title>
+
+  <!-- SEO -->
+  <meta name="description" content="Discover why Belagavi Organics is Karnataka's most trusted organic brand. Directly sourced from 2500+ certified farmers. Chemical-free, pesticide-free, pure and healthy." />
+  <meta name="keywords" content="why belagavi organics, certified organic, farmers, healthy food, chemical free, pesticide free, Karnataka organic" />
+  <meta property="og:title" content="Why Choose Belagavi Organics?" />
+  <meta property="og:description" content="Directly sourced from 2500+ certified organic farmers. Pure, ethical, and healthy." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Work Sans', sans-serif;
+      min-height: 100vh;
+      background: #0d1f12;
+      color: #fff;
+    }
+
+    /* ── Background ── */
+    .page-bg {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      background: url('./why-bg.png') center center / cover no-repeat;
+    }
+    .page-bg::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        160deg,
+        rgba(5, 20, 8, 0.78) 0%,
+        rgba(10, 35, 15, 0.60) 50%,
+        rgba(5, 20, 8, 0.78) 100%
+      );
+    }
+
+    /* ── Header ── */
+    .top-bar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 24px;
+      background: rgba(5, 20, 8, 0.6);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .top-bar .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+    .top-bar .brand img {
+      height: 38px;
+      width: auto;
+    }
+    .top-bar .brand span {
+      font-family: 'Manrope', sans-serif;
+      font-size: 18px;
+      font-weight: 700;
+      color: #fff;
+    }
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-family: 'Work Sans', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      color: rgba(255,255,255,0.85);
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 100px;
+      border: 1px solid rgba(255,255,255,0.2);
+      background: rgba(255,255,255,0.08);
+      transition: all 0.25s ease;
+    }
+    .back-btn:hover {
+      background: rgba(255,255,255,0.16);
+      color: #fff;
+    }
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      font-size: 18px;
+    }
+
+    /* ── Page Content ── */
+    .page-content {
+      position: relative;
+      z-index: 10;
+      min-height: 100vh;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 100px 16px 48px;
+    }
+
+    /* ── Main Card ── */
+    .why-card {
+      width: 100%;
+      max-width: 680px;
+      background: rgba(255, 255, 255, 0.07);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Card top accent strip */
+    .card-accent {
+      height: 4px;
+      background: linear-gradient(90deg, #2d6a4f, #dda15e, #2d6a4f);
+    }
+
+    .card-body {
+      padding: 36px 32px;
+    }
+
+    /* Page title */
+    .page-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #dda15e;
+      margin-bottom: 16px;
+    }
+    .page-eyebrow .material-symbols-outlined { font-size: 14px; color: #dda15e; }
+
+    .page-title {
+      font-family: 'Manrope', sans-serif;
+      font-size: 28px;
+      font-weight: 800;
+      line-height: 1.2;
+      color: #fff;
+      margin-bottom: 8px;
+    }
+    .page-subtitle {
+      font-size: 14px;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 28px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    /* Section */
+    .why-section {
+      margin-bottom: 28px;
+    }
+    .why-section:last-child { margin-bottom: 0; }
+
+    .section-label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Manrope', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      color: #88d982;
+      margin-bottom: 12px;
+    }
+    .section-label .material-symbols-outlined {
+      font-size: 18px;
+      color: #88d982;
+      font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    .why-section p {
+      font-size: 14px;
+      line-height: 1.75;
+      color: rgba(255, 255, 255, 0.80);
+    }
+    .why-section p + p {
+      margin-top: 10px;
+    }
+
+    /* Feature list */
+    .feature-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 4px;
+    }
+    .feature-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 14px;
+      color: rgba(255,255,255,0.82);
+      line-height: 1.5;
+    }
+    .feature-list li .material-symbols-outlined {
+      font-size: 18px;
+      color: #88d982;
+      flex-shrink: 0;
+      margin-top: 1px;
+      font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+
+    /* Divider */
+    .divider {
+      height: 1px;
+      background: rgba(255,255,255,0.1);
+      margin: 24px 0;
+    }
+
+    /* Save Earth banner */
+    .earth-banner {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      background: rgba(45, 106, 79, 0.25);
+      border: 1px solid rgba(136, 217, 130, 0.3);
+      border-radius: 12px;
+      padding: 14px 18px;
+      margin-top: 24px;
+    }
+    .earth-banner .material-symbols-outlined {
+      font-size: 28px;
+      color: #88d982;
+      flex-shrink: 0;
+      font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .earth-banner span:last-child {
+      font-family: 'Manrope', sans-serif;
+      font-size: 15px;
+      font-weight: 700;
+      color: #88d982;
+      letter-spacing: 0.02em;
+    }
+
+    /* CTA button */
+    .cta-row {
+      display: flex;
+      gap: 12px;
+      margin-top: 28px;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      flex-wrap: wrap;
+    }
+    .btn-shop {
+      flex: 1;
+      min-width: 140px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: #2d6a4f;
+      color: #fff;
+      font-family: 'Work Sans', sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 12px 20px;
+      border-radius: 100px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      box-shadow: 0 4px 16px rgba(45,106,79,0.4);
+    }
+    .btn-shop:hover {
+      background: #40916c;
+      transform: translateY(-2px);
+    }
+    .btn-contact {
+      flex: 1;
+      min-width: 140px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: transparent;
+      color: rgba(255,255,255,0.85);
+      font-family: 'Work Sans', sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      padding: 12px 20px;
+      border-radius: 100px;
+      border: 1px solid rgba(255,255,255,0.25);
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.25s ease;
+    }
+    .btn-contact:hover {
+      background: rgba(255,255,255,0.1);
+      color: #fff;
+    }
+
+    /* Stats row */
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-bottom: 28px;
+    }
+    .stat-box {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 16px 12px;
+      text-align: center;
+    }
+    .stat-box .num {
+      font-family: 'Manrope', sans-serif;
+      font-size: 22px;
+      font-weight: 800;
+      color: #88d982;
+      display: block;
+    }
+    .stat-box .lbl {
+      font-size: 11px;
+      color: rgba(255,255,255,0.55);
+      margin-top: 4px;
+      display: block;
+      line-height: 1.3;
+    }
+
+    /* Brand Assets Gallery */
+    .brand-assets {
+      margin-top: 32px;
+      padding-top: 32px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+    .asset-box {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .asset-box img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: contain;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      .top-bar { padding: 12px 16px; }
+      .top-bar .brand span { font-size: 15px; }
+      .card-body { padding: 24px 18px; }
+      .page-title { font-size: 22px; }
+      .stats-row { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+      .stat-box .num { font-size: 18px; }
+      .stat-box .lbl { font-size: 10px; }
+      .cta-row { flex-direction: column; }
+      .btn-shop, .btn-contact { flex: none; width: 100%; }
+      .brand-assets { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background -->
+  <div class="page-bg"></div>
+
+  <!-- Top Bar -->
+  <header class="top-bar">
+    <a href="index.html" class="brand">
+      <img
+        alt="Belagavi Organics Logo"
+        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCnX6jtFx39-dJmpCmrT331MR8khtFfvnOaiSLMH-BUO-fsnzZtpR3ttpfnKH1fbXSmJyNKmCo4Xj84fjisEDKplD6NWe8-HHnKGqvzBq_24cDg0GUk89oFAj0SDj5GPY50YYNHTHG-J94oAjgidlEwBJXZSsUzT-BO0jomzWAcwRohtcmVBMcz90_QabR5usaTQJSNjYrVCObpANRvKqYaYlRcBJJcBoErn0QVmBdRcKNRNYvraRD9NABATZiBVII-zAIwnYCEiWQ"
+      />
+      <span>Belagavi Organics</span>
+    </a>
+    <a href="index.html" class="back-btn">
+      <span class="material-symbols-outlined">arrow_back</span>
+      Back to Home
+    </a>
+  </header>
+
+  <!-- Main Content -->
+  <div class="page-content">
+    <div class="why-card">
+      <div class="card-accent"></div>
+      <div class="card-body">
+
+        <!-- Eyebrow & Title -->
+        <span class="page-eyebrow">
+          <span class="material-symbols-outlined">eco</span>
+          Our Story & Promise
+        </span>
+        <h1 class="page-title">Why Choose Belagavi Organics?</h1>
+        <p class="page-subtitle">
+          Sustainably sown, organically grown — directly from the farmer's field to your family's table.
+        </p>
+
+        <!-- Stats -->
+        <div class="stats-row">
+          <div class="stat-box">
+            <span class="num">2500+</span>
+            <span class="lbl">Certified Farmers</span>
+          </div>
+          <div class="stat-box">
+            <span class="num">100%</span>
+            <span class="lbl">Organic Certified</span>
+          </div>
+          <div class="stat-box">
+            <span class="num">0%</span>
+            <span class="lbl">Chemicals & Pesticides</span>
+          </div>
+        </div>
+
+        <!-- Section 1: Who We Are -->
+        <div class="why-section">
+          <div class="section-label">
+            <span class="material-symbols-outlined">groups</span>
+            Who We Are
+          </div>
+          <p>
+            Belagavi Organics is the marketing division of <strong style="color:#fff;">Belagavi District Regional Co‑Op Farmers Associations Federation Ltd., Belagavi</strong> — created to build social and economic sustainability for over 2500 small and marginal certified organic farmers in the Belagavi District.
+          </p>
+          <p>
+            By directly sourcing your food from these dedicated farmers, we ensure you receive the <strong style="color:#88d982;">purest, hand-cleaned, chemical-free and pesticide-free</strong> organic products. Every grain is hygienically processed and truly healthy.
+          </p>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Section 2: What We Offer -->
+        <div class="why-section">
+          <div class="section-label">
+            <span class="material-symbols-outlined">storefront</span>
+            What We Offer
+          </div>
+          <p>We bring you a carefully curated range of certified organic products, including:</p>
+          <ul class="feature-list" style="margin-top: 12px;">
+            <li>
+              <span class="material-symbols-outlined">grain</span>
+              Unpolished Millets & a variety of unpolished Rice
+            </li>
+            <li>
+              <span class="material-symbols-outlined">local_florist</span>
+              Organic Jaggery & Jaggery Powder
+            </li>
+            <li>
+              <span class="material-symbols-outlined">opacity</span>
+              Cold-Pressed Safflower, Groundnut, Sunflower & Coconut Oils
+            </li>
+            <li>
+              <span class="material-symbols-outlined">spa</span>
+              Unpolished Pulses, Spices & Traditional Pickles
+            </li>
+          </ul>
+          <p style="margin-top: 14px; font-size: 13px; font-style: italic; color: rgba(255,255,255,0.6);">
+            The entire proceeds of every sale go directly to supporting the farmers who grew your food.
+          </p>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- Section 3: Why Organic -->
+        <div class="why-section">
+          <div class="section-label">
+            <span class="material-symbols-outlined">health_and_safety</span>
+            Why Eat Clean & Green Organic?
+          </div>
+          <ul class="feature-list">
+            <li>
+              <span class="material-symbols-outlined">verified</span>
+              Purely Organic — Safe and Healthy Food for your whole family
+            </li>
+            <li>
+              <span class="material-symbols-outlined">verified</span>
+              Free from synthetic chemicals and pesticides, so naturally safer
+            </li>
+            <li>
+              <span class="material-symbols-outlined">verified</span>
+              More nutritious — rich in antioxidants, minerals and vitamins
+            </li>
+            <li>
+              <span class="material-symbols-outlined">verified</span>
+              Supports local farmers and sustains traditional farming practices
+            </li>
+          </ul>
+        </div>
+
+
+
+        <!-- Save Earth Banner -->
+        <div class="earth-banner">
+          <span class="material-symbols-outlined">eco</span>
+          <span>Save the Mother Earth — Choose Organic, Choose Life.</span>
+        </div>
+
+        <!-- CTA Buttons -->
+        <div class="cta-row">
+          <a href="index.html#products" class="btn-shop">
+            <span class="material-symbols-outlined" style="font-size:16px;">shopping_bag</span>
+            Shop Our Range
+          </a>
+          <a href="index.html#footer" class="btn-contact">
+            <span class="material-symbols-outlined" style="font-size:16px;">call</span>
+            Contact Us
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

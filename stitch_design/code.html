@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Belagavi Organics</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&amp;family=Work+Sans:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-tint": "#1b6d24",
+                        "error-container": "#ffdad6",
+                        "tertiary-fixed-dim": "#c6c8b5",
+                        "surface-container": "#dbf1fe",
+                        "on-primary-fixed-variant": "#005312",
+                        "on-tertiary-container": "#f0f2df",
+                        "on-surface-variant": "#40493d",
+                        "primary": "#0d631b",
+                        "primary-container": "#2e7d32",
+                        "on-tertiary": "#ffffff",
+                        "secondary": "#9c4400",
+                        "on-background": "#071e27",
+                        "secondary-fixed": "#ffdbca",
+                        "primary-fixed-dim": "#88d982",
+                        "tertiary-container": "#6c6f5f",
+                        "background": "#f3faff",
+                        "error": "#ba1a1a",
+                        "surface-container-highest": "#cfe6f2",
+                        "on-primary-container": "#cbffc2",
+                        "surface-variant": "#cfe6f2",
+                        "inverse-primary": "#88d982",
+                        "outline-variant": "#bfcaba",
+                        "secondary-container": "#fd7613",
+                        "outline": "#707a6c",
+                        "primary-fixed": "#a3f69c",
+                        "on-secondary": "#ffffff",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed": "#e2e4d1",
+                        "on-error-container": "#93000a",
+                        "inverse-surface": "#1e333c",
+                        "surface-dim": "#c7dde9",
+                        "on-primary-fixed": "#002204",
+                        "surface-container-high": "#d5ecf8",
+                        "on-tertiary-fixed": "#1a1d11",
+                        "surface": "#f3faff",
+                        "on-secondary-fixed": "#331200",
+                        "surface-container-low": "#e6f6ff",
+                        "surface-bright": "#f3faff",
+                        "on-surface": "#071e27",
+                        "secondary-fixed-dim": "#ffb68f",
+                        "on-secondary-fixed-variant": "#773200",
+                        "tertiary": "#545748",
+                        "on-error": "#ffffff",
+                        "on-secondary-container": "#5b2500",
+                        "on-primary": "#ffffff",
+                        "inverse-on-surface": "#dff4ff",
+                        "on-tertiary-fixed-variant": "#45483a"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "xl": "80px",
+                        "lg": "48px",
+                        "gutter": "24px",
+                        "base": "8px",
+                        "md": "24px",
+                        "sm": "12px",
+                        "xs": "4px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Work Sans"],
+                        "headline-md": ["Manrope"],
+                        "display-lg": ["Manrope"],
+                        "headline-lg": ["Manrope"],
+                        "headline-lg-mobile": ["Manrope"],
+                        "body-lg": ["Work Sans"],
+                        "label-md": ["Work Sans"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-fill {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background antialiased font-body-md text-body-md">
+<!-- TopNavBar -->
+<header class="bg-surface/90 dark:bg-inverse-surface/90 backdrop-blur-md full-width top-0 sticky z-50 border-b border-outline-variant/10">
+<div class="flex justify-between items-center w-full px-gutter max-w-container-max mx-auto h-20">
+<div class="flex items-center gap-sm">
+<img alt="Belagavi Organics Logo" class="h-12 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCnX6jtFx39-dJmpCmrT331MR8khtFfvnOaiSLMH-BUO-fsnzZtpR3ttpfnKH1fbXSmJyNKmCo4Xj84fjisEDKplD6NWe8-HHnKGqvzBq_24cDg0GUk89oFAj0SDj5GPY50YYNHTHG-J94oAjgidlEwBJXZSsUzT-BO0jomzWAcwRohtcmVBMcz90_QabR5usaTQJSNjYrVCObpANRvKqYaYlRcBJJcBoErn0QVmBdRcKNRNYvraRD9NABATZiBVII-zAIwnYCEiWQ"/>
+<span class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed-dim hidden md:block">Belagavi Organics</span>
+</div>
+<nav class="hidden md:flex items-center gap-md">
+<a class="text-primary dark:text-primary-fixed-dim border-b-2 border-secondary font-bold font-label-md text-label-md" href="#">Our Mission</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors font-label-md text-label-md" href="#">Organic Millets</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors font-label-md text-label-md" href="#">Pulses &amp; Oils</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors font-label-md text-label-md" href="#">Farmers Network</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed-dim transition-colors font-label-md text-label-md" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-md">
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+<button class="bg-primary text-on-primary px-md py-sm rounded-full font-label-md text-label-md hover:bg-primary-container transition-colors hidden md:block">
+                    Shop Now
+                </button>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative w-full min-h-[80vh] flex items-center overflow-hidden bg-surface-container-low">
+<div class="absolute inset-0 z-0">
+<div class="bg-cover bg-center w-full h-full opacity-60 mix-blend-multiply" data-alt="A serene, high-quality photograph of rich, dark organic soil with vibrant green sprouts emerging, bathed in soft, warm morning sunlight. The depth of field is shallow, creating a creamy bokeh background that emphasizes the texture of the earth. The overall mood is natural, restorative, and grounded, fitting a premium organic brand." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDm8sE7NVYBl1y4mWeKsCz1X52PBDxEoqXAt02JpPJsNN0kg6C7wg0bMotC-54aGV5hTj30wkuRm1rimQpW4CEUklMcxeQ9bnwm0nU7c7u2dslUZIS1SIVffV6tmMwP-9l998XOZuWvulySwhEzJcDs_jsGZN_w8YqR_nHnAsWWmOtZl3PGmN-ANq4jpPgHjNWAN99-NPRI1NfOacXPS2HW7FJ4pjI7JjCxKUuG2AdpPxzMnoQJzLgtoH9dRMPaypNx3NMfugfNv7jR')"></div>
+</div>
+<div class="relative z-10 w-full px-gutter max-w-container-max mx-auto py-xl">
+<div class="max-w-2xl bg-surface/80 backdrop-blur-sm p-lg rounded-xl border border-outline-variant/20 shadow-sm">
+<span class="inline-block bg-secondary/10 text-secondary-container px-sm py-xs rounded-full font-label-md text-label-md mb-md">100% Certified Organic</span>
+<h1 class="font-display-lg text-display-lg text-primary mb-md">Eat clean, green and healthy. Feel healthy.</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-lg">
+                        If you ate today, thank a farmer. We directly source our organic millets, pulses, and oils from over 2500 small and marginal farmers in the Belagavi District.
+                    </p>
+<div class="flex flex-col sm:flex-row gap-md">
+<button class="bg-primary text-on-primary px-lg py-sm rounded-full font-label-md text-label-md hover:bg-primary-container transition-all shadow-sm">
+                            Explore Products
+                        </button>
+<button class="border-2 border-primary text-primary px-lg py-sm rounded-full font-label-md text-label-md hover:bg-primary/5 transition-all">
+                            Our Story
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Our Mission & Direct from Farmers (Bento Grid) -->
+<section class="py-xl px-gutter max-w-container-max mx-auto">
+<div class="text-center mb-xl">
+<h2 class="font-headline-lg text-headline-lg text-primary mb-sm">Rooted in Community</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Connecting conscious consumers with dedicated organic farmers.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-md auto-rows-[minmax(300px,auto)]">
+<!-- Mission Card -->
+<div class="md:col-span-8 bg-surface-container rounded-xl p-lg flex flex-col justify-center relative overflow-hidden border border-outline-variant/10">
+<div class="relative z-10 max-w-lg">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-md">Our Mission</h3>
+<p class="text-on-surface-variant mb-md">
+                            Creating social and economic sustainability for farmers while delivering pure, chemical-free food to your table. Every grain is hygienically cleaned and ethically sourced.
+                        </p>
+<ul class="space-y-sm">
+<li class="flex items-center gap-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm icon-fill">eco</span>
+                                Purely Organic, Safe and Healthy
+                            </li>
+<li class="flex items-center gap-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm icon-fill">eco</span>
+                                Free from synthetic chemicals
+                            </li>
+<li class="flex items-center gap-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-primary text-sm icon-fill">eco</span>
+                                Rich in antioxidants &amp; minerals
+                            </li>
+</ul>
+</div>
+<div class="absolute right-0 top-0 bottom-0 w-1/3 opacity-20 pointer-events-none hidden md:block">
+<img alt="Background Hills Illustration" class="h-full w-full object-cover object-left mix-blend-luminosity" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEeDNnly3vSlilwUUtP-sSup_vWjU4QtPq4teFmV22F-MOjvm5wx8t1DEHKuP9RF1sLQrZV8l9zleEUg5-K0bkIa-gK1i6vXcGdH3jEfKK4rlM7xXd8Gx1hDPRCBBhDgEfEfyDbRUumaEkFbnzheGLH28d7ToX04AJ7kOP-WbXQ901nFL73DFCUCc60IuTyp57_FYKiD08INb6t1sQ3ABwXtcGR7rebNbCAtJYNHVI94gUTbnvs2v7MqvIDxLAh11o_-htuda-dLLN"/>
+</div>
+</div>
+<!-- Stats Card 1 -->
+<div class="md:col-span-4 bg-primary text-on-primary rounded-xl p-lg flex flex-col justify-center items-center text-center">
+<span class="material-symbols-outlined text-4xl mb-sm opacity-80">groups</span>
+<span class="font-display-lg text-headline-lg block mb-xs">2500+</span>
+<span class="font-label-md text-label-md opacity-90 uppercase tracking-wider">Farmers Network</span>
+</div>
+<!-- Feature Image -->
+<div class="md:col-span-5 rounded-xl overflow-hidden relative">
+<img class="w-full h-full object-cover absolute inset-0" data-alt="A close-up, high-resolution overhead shot of assorted organic pulses and millets neatly arranged in rustic wooden bowls on a clean, light-textured surface. The lighting is bright and natural, highlighting the textures and rich natural colors of the grains. The style is modern, appetizing, and clean." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAk41TV6soh4OF5Qd8L-rKrRuRhFEE2OelT65gZ15lILR3BtpikJDqpgpJ7BDStodqTgD4ZA2NMoApd3af6XxEo-Yu1F678nYLqYpTwhQhuKl3bcK1yPsF0s7frZryeMPwMiSyuRQVPebbKsVONXF24WxDXQgh4HuanplFt3W1MVauCg6Gam08MRI3uNFxEtm4fnwzTMSePAriw4jZfdzbC1gBRILsJ6lEevNTvvJVSF3Hi9mniMtH0Jkiz0_p6Pjh93x15aTHnROPY"/>
+</div>
+<!-- Direct Sourcing Text -->
+<div class="md:col-span-7 bg-surface-container-high rounded-xl p-lg flex flex-col justify-center border border-outline-variant/10">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-sm">Directly Sourced From Farmers</h3>
+<p class="text-on-surface-variant mb-md">
+                        By cutting out the middlemen, we ensure that the purest organic products reach you while the entire proceeds of the sale go directly to supporting the farmers who grew them.
+                    </p>
+<a class="inline-flex items-center gap-xs text-secondary font-label-md text-label-md hover:underline w-fit" href="#">
+                        Learn about our process
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Featured Products -->
+<section class="py-xl px-gutter max-w-container-max mx-auto bg-surface">
+<div class="flex justify-between items-end mb-lg">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-primary mb-sm">Featured Harvest</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Unpolished millets, pulses, and cold-pressed oils.</p>
+</div>
+<a class="hidden md:inline-flex items-center gap-xs text-primary font-label-md text-label-md hover:underline" href="#">
+                    View all products
+                    <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-md">
+<!-- Product Card 1 -->
+<div class="bg-surface-container-lowest rounded-lg border border-outline-variant/20 overflow-hidden hover:shadow-md transition-shadow group">
+<div class="aspect-square bg-surface-container-low relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A clean, brightly lit product shot of organic unpolished foxtail millet in a simple, elegant glass jar or minimal eco-friendly packaging. The background is a soft, off-white studio setting. The focus is sharp on the texture of the millet grains." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNAXgIcADljQoeOspeFFTAzOxOTaFM-DacCgr7tEIA5kUkbhGJ8_8oLtvxZfIBvnSuZatHfRtKCAAUKnlt3lW7dtXDIXQxx30HajlmDBG4KhUoAJdl0icRv56iGeqykZiOEQn66fn7yjhv8QZ1CHzHlWuwU3MPGt4ppYY8QSzpu728ZF7dfiYAGPnoxjgCHNg1G2-8qY5UGzKvh43nfDhCHrj2vSlF5J9D3i1-STFyCgSrW35K01x22BU96FaI55nidgBUTBnxow-L"/>
+<div class="absolute top-sm right-sm flex gap-xs">
+<span class="bg-secondary/20 text-secondary-container px-xs py-[2px] rounded text-[10px] font-bold tracking-wide uppercase">Organic</span>
+</div>
+</div>
+<div class="p-md">
+<h4 class="font-headline-md text-[18px] text-on-surface mb-xs">Unpolished Foxtail Millet</h4>
+<p class="text-on-surface-variant text-sm mb-md">500g</p>
+<div class="flex justify-between items-center">
+<span class="font-bold text-primary">₹120</span>
+<button aria-label="Add to cart" class="text-primary hover:bg-primary/10 p-sm rounded-full transition-colors">
+<span class="material-symbols-outlined">shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="bg-surface-container-lowest rounded-lg border border-outline-variant/20 overflow-hidden hover:shadow-md transition-shadow group">
+<div class="aspect-square bg-surface-container-low relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A clean, brightly lit product shot of organic cold-pressed groundnut oil in a sleek, clear glass bottle. The oil has a rich golden hue. The background is a minimal, soft cream studio setting with a subtle shadow." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvetpO2KYSuSBZZfhYERB72UFJdciJRJnE_DjyTZa5e930oDYllYuFdeFOMylj8UwgHN24Vrgz7aQLsHTKkytK8XPYOMGVVqPDPDxj76ix2C6Veo_MhME1JwRNPQvgYTidM4Mp3PXZuvwnpCdWqV_3a966x-0TZLXhqGptm_wdqs0EYb6TcvjQGa46yiOCm43CWRe7sOdem1XbU2k_icOP5QtCS2_EyPXelJzssCtMwRV_3BMC7MHUEPXoKsVVwMxM0DEX5m0BUOHy"/>
+<div class="absolute top-sm right-sm flex gap-xs">
+<span class="bg-secondary/20 text-secondary-container px-xs py-[2px] rounded text-[10px] font-bold tracking-wide uppercase">Cold Pressed</span>
+</div>
+</div>
+<div class="p-md">
+<h4 class="font-headline-md text-[18px] text-on-surface mb-xs">Groundnut Oil</h4>
+<p class="text-on-surface-variant text-sm mb-md">1 Litre</p>
+<div class="flex justify-between items-center">
+<span class="font-bold text-primary">₹350</span>
+<button aria-label="Add to cart" class="text-primary hover:bg-primary/10 p-sm rounded-full transition-colors">
+<span class="material-symbols-outlined">shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="bg-surface-container-lowest rounded-lg border border-outline-variant/20 overflow-hidden hover:shadow-md transition-shadow group">
+<div class="aspect-square bg-surface-container-low relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A clean, brightly lit product shot of organic jaggery powder in a simple, elegant eco-friendly pouch or bowl. The jaggery is a rich, warm brown color. The background is a soft, off-white studio setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGS14vK4qdrviyPD_7VWeM1logCLuwP0hC9UeG4UTD9Iau7N49l9ocoTDXtl7H-p0oi5mvUJ4-mWa4vGMhlcxZeHN9zFu6jIPaOrC5WUb1g5BNuQ_gXIeelEglVQU6hcOMrwk4FAERBVPBdZpbaFuKMlFjA0_JLYnTC3ACY4lIS4wCH4s2j6rsQlG-uZtQP0jOkAm2zcv70-k2wUFAy7SIt8by8G4B8_pctqUvMVhQRgrwmPDxImOpGjWXHhbioQO8XKdQ2P6M-a5o"/>
+</div>
+<div class="p-md">
+<h4 class="font-headline-md text-[18px] text-on-surface mb-xs">Organic Jaggery Powder</h4>
+<p class="text-on-surface-variant text-sm mb-md">500g</p>
+<div class="flex justify-between items-center">
+<span class="font-bold text-primary">₹85</span>
+<button aria-label="Add to cart" class="text-primary hover:bg-primary/10 p-sm rounded-full transition-colors">
+<span class="material-symbols-outlined">shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="bg-surface-container-lowest rounded-lg border border-outline-variant/20 overflow-hidden hover:shadow-md transition-shadow group">
+<div class="aspect-square bg-surface-container-low relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A clean, brightly lit product shot of organic toor dal (split pigeon peas) in a simple glass jar. The dal is a bright, natural yellow. The background is a minimal, soft cream studio setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbyr-ToKml2XIAw4KuW1GoiZnlZYj6IS_mPl4bJgqpX1RygHoozY5KZuF4i_DOsuOmuxUY9YMpfOquSnqDorYdEazpVLtIrIgeVRGIB__WEryLXZLkXJQeS9zZJyYOO-egwKvkhxEDon-5rclVt-towy7f8TSWaEhztHCebi2LKg-PZ8WM2N8WYG-HnYaHdrUYSEINoYzI0EV28MuKSkAI-DvMir_Wv4tm2SD9H1PdK8imth-zyDeZKLN8nMlQ-CbEtUI9xJVzV_tj"/>
+</div>
+<div class="p-md">
+<h4 class="font-headline-md text-[18px] text-on-surface mb-xs">Organic Toor Dal</h4>
+<p class="text-on-surface-variant text-sm mb-md">1 kg</p>
+<div class="flex justify-between items-center">
+<span class="font-bold text-primary">₹190</span>
+<button aria-label="Add to cart" class="text-primary hover:bg-primary/10 p-sm rounded-full transition-colors">
+<span class="material-symbols-outlined">shopping_cart</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-md text-center md:hidden">
+<a class="inline-flex items-center gap-xs text-primary font-label-md text-label-md border border-primary px-lg py-sm rounded-full" href="#">
+                    View all products
+                </a>
+</div>
+</section>
+<!-- Graphic Footer Transition -->
+<div class="w-full overflow-hidden mt-xl pointer-events-none select-none">
+<img alt="Decorative landscape illustration with cows" class="w-full object-cover object-bottom h-[200px] md:h-[300px] opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEeDNnly3vSlilwUUtP-sSup_vWjU4QtPq4teFmV22F-MOjvm5wx8t1DEHKuP9RF1sLQrZV8l9zleEUg5-K0bkIa-gK1i6vXcGdH3jEfKK4rlM7xXd8Gx1hDPRCBBhDgEfEfyDbRUumaEkFbnzheGLH28d7ToX04AJ7kOP-WbXQ901nFL73DFCUCc60IuTyp57_FYKiD08INb6t1sQ3ABwXtcGR7rebNbCAtJYNHVI94gUTbnvs2v7MqvIDxLAh11o_-htuda-dLLN"/>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container dark:bg-inverse-surface full-width bottom-0 bg-surface-container-high dark:bg-surface-dim">
+<div class="w-full py-lg px-gutter max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-md">
+<div class="flex flex-col items-center md:items-start gap-sm">
+<span class="font-headline-md text-headline-md text-primary dark:text-primary-fixed-dim font-bold">Belagavi Organics</span>
+<p class="text-sm text-on-surface-variant text-center md:text-left max-w-sm">
+                    Manufactured &amp; Marketed by:<br/>
+                    Belagavi District Regional Co-Op. Organic Farmers Associations Federation Ltd. Belagavi.
+                 </p>
+</div>
+<nav class="flex flex-wrap justify-center md:justify-end gap-x-md gap-y-sm">
+<a class="text-on-surface-variant opacity-80 hover:text-secondary hover:opacity-100 transition-opacity font-body-md text-body-md" href="#">Privacy Policy</a>
+<a class="text-on-surface-variant opacity-80 hover:text-secondary hover:opacity-100 transition-opacity font-body-md text-body-md" href="#">Certification Details</a>
+<a class="text-on-surface-variant opacity-80 hover:text-secondary hover:opacity-100 transition-opacity font-body-md text-body-md" href="#">Sustainability Report</a>
+<a class="text-on-surface-variant opacity-80 hover:text-secondary hover:opacity-100 transition-opacity font-body-md text-body-md" href="#">Farmer Login</a>
+<a class="text-on-surface-variant opacity-80 hover:text-secondary hover:opacity-100 transition-opacity font-body-md text-body-md" href="#">Shipping Info</a>
+</nav>
+<div class="w-full text-center md:text-left text-xs text-on-surface-variant opacity-70 mt-md md:mt-0 md:w-auto">
+                © 2024 Belagavi District Regional Co-Op. Organic Farmers Associations Federation Ltd.
+            </div>
+</div>
+</footer>
+</body></html>

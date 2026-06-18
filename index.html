@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Belagavi Organics — Eat Clean, Green and Healthy</title>
+  <!-- SEO Optimization -->
+  <meta name="description" content="Belagavi Organics: 100% Certified Organic Millets, Pulses, and Cold-Pressed Oils directly from 2500+ farmers. Eat clean, live healthy." />
+  <meta name="keywords" content="organic food, belagavi, organic millets, pulses, cold pressed oil, sustainable farming, healthy lifestyle" />
+  <link rel="canonical" href="https://belagavi-organics.github.io/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://belagavi-organics.github.io/" />
+  <meta property="og:title" content="Belagavi Organics — Eat Clean, Green and Healthy" />
+  <meta property="og:description" content="Directly sourced organic goodness from 2500+ farmers in Belagavi. Sustainably grown, ethically sourced." />
+  <meta property="og:image" content="https://belagavi-organics.github.io/Belagavi-Organics/images/OG-Image.jpg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://belagavi-organics.github.io/" />
+  <meta property="twitter:title" content="Belagavi Organics — Eat Clean, Green and Healthy" />
+  <meta property="twitter:description" content="Directly sourced organic goodness from 2500+ farmers in Belagavi." />
+  <meta property="twitter:image" content="https://belagavi-organics.github.io/Belagavi-Organics/images/OG-Image.jpg" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Scripts -->
+  <script type="module" src="script.js"></script>
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner container">
+      <a href="index.html" class="header-brand">
+        <img
+          alt="Belagavi Organics Logo"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCnX6jtFx39-dJmpCmrT331MR8khtFfvnOaiSLMH-BUO-fsnzZtpR3ttpfnKH1fbXSmJyNKmCo4Xj84fjisEDKplD6NWe8-HHnKGqvzBq_24cDg0GUk89oFAj0SDj5GPY50YYNHTHG-J94oAjgidlEwBJXZSsUzT-BO0jomzWAcwRohtcmVBMcz90_QabR5usaTQJSNjYrVCObpANRvKqYaYlRcBJJcBoErn0QVmBdRcKNRNYvraRD9NABATZiBVII-zAIwnYCEiWQ"
+        />
+        <span>Belagavi Organics</span>
+      </a>
+
+      <nav class="header-nav" id="desktop-nav">
+        <a href="#mission" class="active" data-i18n="nav_mission">Our Mission</a>
+        <a href="#products" data-i18n="nav_range">Organic Range</a>
+        <a href="#community" data-i18n="nav_network">Farmers Network</a>
+        <a href="#footer" data-i18n="nav_contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="language-dropdown">
+          <button class="btn-lang" id="btn-lang">
+            <span class="material-symbols-outlined">language</span>
+            <span>English</span>
+            <span class="material-symbols-outlined">expand_more</span>
+          </button>
+          <div class="lang-menu" id="lang-menu">
+            <a href="#" data-lang="en">English</a>
+            <a href="#" data-lang="hi">Hindi (हिन्दी)</a>
+            <a href="#" data-lang="mr">Marathi (मराठी)</a>
+            <a href="#" data-lang="kn">Kannada (ಕನ್ನಡ)</a>
+          </div>
+        </div>
+        <button class="btn-mobile-menu" id="btn-mobile-open" aria-label="Open menu">
+          <span class="material-symbols-outlined">menu</span>
+        </button>
+        <button class="btn-shop-now btn-shop-now-desktop" data-i18n="btn_shop" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">Shop Now</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ MOBILE NAV ============ -->
+  <div class="mobile-nav-overlay" id="mobile-overlay"></div>
+  <nav class="mobile-nav" id="mobile-nav">
+    <button class="mobile-nav-close" id="btn-mobile-close" aria-label="Close menu">
+      <span class="material-symbols-outlined">close</span>
+    </button>
+    <a href="#mission" class="mobile-link" data-i18n="nav_mission">Our Mission</a>
+    <a href="#community" class="mobile-link" data-i18n="nav_network">Farmers Network</a>
+    <a href="#products" class="mobile-link" data-i18n="nav_range">Organic Range</a>
+    <a href="#footer" class="mobile-link" data-i18n="nav_contact">Contact</a>
+    <button class="btn-shop-now" data-i18n="btn_shop">Shop Now</button>
+  </nav>
+
+  <!-- ============ MAIN ============ -->
+  <main>
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <div
+          class="hero-bg-image"
+          style="background-image: url('./hero-bg.png')"
+        ></div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-card">
+          <div class="hero-badge" data-i18n="hero_badge">100% Certified Organic</div>
+          <h1 class="hero-title font-display-lg" data-i18n="hero_title">
+            Eat clean, green and healthy. Feel healthy.
+          </h1>
+          <p class="hero-desc font-body-lg" data-i18n="hero_desc">
+            If you ate today, thank a farmer. We directly source our organic
+            millets, pulses, and oils from over 2500 small and marginal farmers
+            in the Belagavi District.
+          </p>
+          <div class="hero-buttons">
+            <button class="btn-primary" data-i18n="hero_btn_explore" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">
+              Explore Products
+            </button>
+            <button class="btn-outline" data-i18n="hero_btn_story" onclick="window.location.href='why-us.html'">
+              Our Story
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ROOTED IN COMMUNITY ===== -->
+    <section class="section-community" id="community">
+      <div class="section-header reveal">
+        <h2 class="font-headline-lg" data-i18n="section_community_title">Rooted in Community</h2>
+        <p class="font-body-lg" data-i18n="section_community_desc">Connecting conscious consumers with dedicated organic farmers.</p>
+      </div>
+
+      <div class="mission-wrapper container">
+        <!-- Mission Card -->
+        <div class="bento-mission reveal" id="mission">
+          <div class="bento-mission-content">
+            <h3 class="font-headline-md" data-i18n="bento_mission_title">Our Mission</h3>
+            <p class="font-body-md" data-i18n="bento_mission_desc">
+              Creating social and economic sustainability for farmers while delivering pure, chemical-free food to your table. Every grain is hygienically cleaned and ethically sourced.
+            </p>
+            <ul class="mission-list">
+              <li>
+                <span class="material-symbols-outlined icon-fill">eco</span>
+                Purely Organic, Safe and Healthy
+              </li>
+              <li>
+                <span class="material-symbols-outlined icon-fill">eco</span>
+                Free from synthetic chemicals
+              </li>
+              <li>
+                <span class="material-symbols-outlined icon-fill">eco</span>
+                Rich in antioxidants &amp; minerals
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BRAND VERIFICATION (The 3 WhatsApp Photos) ===== -->
+    <section class="section-brand-assets container">
+      <div class="brand-assets-grid">
+        <div class="brand-asset-card reveal">
+          <img src="images/wa-1.jpg" alt="Organic Heritage" />
+        </div>
+        <div class="brand-asset-card reveal reveal-delay-1">
+          <img src="images/wa-2.jpg" alt="Official Recognition" />
+        </div>
+        <div class="brand-asset-card reveal reveal-delay-2">
+          <img src="images/wa-3.jpg" alt="Farmer Connection" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DIRECT SOURCING ===== -->
+    <section class="section-sourcing container">
+      <div class="sourcing-card reveal">
+        <div class="sourcing-content">
+          <h3 class="font-headline-md" data-i18n="bento_sourcing_title">Directly Sourced From Farmers</h3>
+          <p class="font-body-md" data-i18n="bento_sourcing_desc">
+            By cutting out the middlemen, we ensure that the purest organic products reach you while the entire proceeds of the sale go directly to supporting the farmers.
+          </p>
+          <a href="why-us.html" class="link-arrow" data-i18n="bento_sourcing_btn">
+            Why Choose Belagavi Organics?
+            <span class="material-symbols-outlined">arrow_forward</span>
+          </a>
+        </div>
+        <div class="sourcing-image">
+           <img src="why-bg.png" alt="Direct Sourcing" />
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ===== FEATURED PRODUCTS ===== -->
+    <section class="section-products" id="products">
+      <div class="products-header">
+        <div>
+          <h2 class="font-headline-lg" data-i18n="section_range_title">Farm Fresh Organic Range</h2>
+          <p class="font-body-lg" data-i18n="section_range_desc">Discover our complete range of certified organic products</p>
+        </div>
+        <a href="https://belagavi-organics.github.io/Belagavi-Organics/catalog/catalog.pdf" class="link-arrow" target="_blank">
+          Download Catalog
+          <span class="material-symbols-outlined">download</span>
+        </a>
+      </div>
+
+      <div class="products-grid">
+        <!-- Sweeteners -->
+        <div class="product-card reveal">
+          <div class="product-card-image">
+            <img alt="Sweeteners" src="https://belagavi-organics.github.io/Belagavi-Organics/images/sweeteners.png" />
+            <span class="product-tag">Organic</span>
+          </div>
+          <div class="product-card-body">
+            <h4>Sweeteners</h4>
+            <p class="product-weight">Farm Fresh</p>
+            <div class="product-card-footer">
+              <span class="product-price"></span>
+              <button class="btn-cart" aria-label="Explore" onclick="window.location.href='category.html?c=sweeteners'">
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dry Nuts -->
+        <div class="product-card reveal reveal-delay-1">
+          <div class="product-card-image">
+            <img alt="Dry Nuts" src="https://belagavi-organics.github.io/Belagavi-Organics/images/Dry-Nuts.jpg" />
+            <span class="product-tag">Organic</span>
+          </div>
+          <div class="product-card-body">
+            <h4>Dry Nuts</h4>
+            <p class="product-weight">Premium Quality</p>
+            <div class="product-card-footer">
+              <span class="product-price"></span>
+              <button class="btn-cart" aria-label="Explore" onclick="window.location.href='category.html?c=dry%20nuts'">
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pulses and Dal -->
+        <div class="product-card reveal reveal-delay-2">
+          <div class="product-card-image">
+            <img alt="Pulses and Dal" src="https://belagavi-organics.github.io/Belagavi-Organics/images/Pulses-and-Dal.png" />
+            <span class="product-tag">Farm Fresh</span>
+          </div>
+          <div class="product-card-body">
+            <h4>Pulses &amp; Dal</h4>
+            <p class="product-weight">Unpolished</p>
+            <div class="product-card-footer">
+              <span class="product-price"></span>
+              <button class="btn-cart" aria-label="Explore" onclick="window.location.href='category.html?c=pulses%20and%20dal'">
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rice -->
+        <div class="product-card reveal reveal-delay-3">
+          <div class="product-card-image">
+            <img alt="Rice" src="https://belagavi-organics.github.io/Belagavi-Organics/images/Rice.jpg" />
+            <span class="product-tag">Organic</span>
+          </div>
+          <div class="product-card-body">
+            <h4>Rice Varieties</h4>
+            <p class="product-weight">Traditional</p>
+            <div class="product-card-footer">
+              <span class="product-price"></span>
+              <button class="btn-cart" aria-label="Explore" onclick="window.location.href='category.html?c=rice'">
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Millets -->
+        <div class="product-card reveal">
+          <div class="product-card-image">
+            <img alt="Millets" src="https://belagavi-organics.github.io/Belagavi-Organics/images/Millets.webp" />
+            <span class="product-tag">Healthy</span>
+          </div>
+          <div class="product-card-body">
+            <h4>Organic Millets</h4>
+            <p class="product-weight">Unpolished</p>
+            <div class="product-card-footer">
+              <span class="product-price"></span>
+              <button class="btn-cart" aria-label="Explore" onclick="window.location.href='category.html?c=millets'">
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Oils -->
+        <div class="product-card reveal reveal-delay-1">
+          <div class="product-card-image">
+            <img alt="Oils" src="https://belagavi-organics.github.io/Belagavi-Organics/images/Oils.jpg" />
+            <span class="product-tag">Cold Pressed</span>
+          </div>
+          <div class="product-card-body">
+            <h4>Pressed Oils</h4>
+            <p class="product-weight">Pure &amp; Natural</p>
+            <div class="product-card-footer">
+              <span class="product-price"></span>
+              <button class="btn-cart" aria-label="Explore" onclick="window.location.href='category.html?c=oils'">
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Spices -->
+        <div class="product-card reveal reveal-delay-2">
+          <div class="product-card-image">
+            <img alt="Spices" src="https://belagavi-organics.github.io/Belagavi-Organics/images/Spices.jpg" />
+            <span class="product-tag">Aromatic</span>
+          </div>
+          <div class="product-card-body">
+            <h4>Whole Spices</h4>
+            <p class="product-weight">Premium Grade</p>
+            <div class="product-card-footer">
+              <span class="product-price"></span>
+              <button class="btn-cart" aria-label="Explore" onclick="window.location.href='category.html?c=spices'">
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pickles -->
+        <div class="product-card reveal reveal-delay-3">
+          <div class="product-card-image">
+            <img alt="Pickles" src="https://belagavi-organics.github.io/Belagavi-Organics/images/pickels.jpg" />
+            <span class="product-tag">Homemade</span>
+          </div>
+          <div class="product-card-body">
+            <h4>Traditional Pickles</h4>
+            <p class="product-weight">Authentic Taste</p>
+            <div class="product-card-footer">
+              <span class="product-price"></span>
+              <button class="btn-cart" aria-label="Explore" onclick="window.location.href='category.html?c=pickles'">
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile View All -->
+      <div class="products-view-all-mobile">
+        <a href="#" class="btn-outline-sm">View all products</a>
+      </div>
+    </section>
+
+
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer" id="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-brand-name">Belagavi Organics</span>
+        <p>
+          Manufactured &amp; Marketed by:<br />
+          Belagavi District Regional Co-Op. Organic Farmers Associations Federation Ltd. Belagavi.<br /><br />
+          <strong>Visit Us:</strong><br />
+          IAT Building. Joint director of agriculture Premises,<br />
+          Near RTO circle, Shivaji Nagar, Belagavi - 590016
+        </p>
+      </div>
+      <nav class="footer-nav" style="flex-direction: column; align-items: flex-end;">
+        <p style="text-align: right; color: var(--on-surface-variant); font-size: 14px; line-height: 1.6;">
+          <strong>Contact Us:</strong><br />
+          Maruti Mellikeri | +91 8884063030<br />
+          omfbelagavi@gmail.com<br /><br />
+          <strong>Working Hours:</strong><br />
+          Mon – Fri: 8:00 AM – 6:00 PM<br />
+          Sat: 9:00 AM – 4:00 PM<br />
+          Sun: Closed
+        </p>
+        <div style="display: flex; gap: 16px; margin-top: 12px;">
+          <a href="https://instagram.com/YourInstagramID" target="_blank" title="Instagram">Instagram</a>
+          <a href="https://facebook.com/YourFacebookPage" target="_blank" title="Facebook">Facebook</a>
+          <a href="#" id="btn-share" title="Share Website">Share Site</a>
+        </div>
+      </nav>
+    </div>
+    <div class="footer-copyright">
+      © 2024 Belagavi District Regional Co-Op. Organic Farmers Associations Federation Ltd.
+    </div>
+  </footer>
+
+
+</body>
+</html>

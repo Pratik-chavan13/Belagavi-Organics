@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Belagavi Organics - Category Products</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Work+Sans:wght@400;500&display=swap" rel="stylesheet" />
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+  
+  <!-- SEO Optimization -->
+  <meta name="description" content="Explore our premium range of 100% certified organic products. From traditional rice varieties to cold-pressed oils, sourced directly from farmers." />
+  <meta name="keywords" content="organic products, healthy food, farmers market, belagavi organics, organic rice, cold pressed oils" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Belagavi Organics - Premium Organic Range" />
+  <meta property="og:description" content="Directly sourced organic goodness from 2500+ farmers. Eat clean, feel healthy." />
+  <meta property="og:image" content="https://belagavi-organics.github.io/Belagavi-Organics/images/OG-Image.jpg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="Belagavi Organics - Premium Organic Range" />
+  <meta property="twitter:description" content="Directly sourced organic goodness from 2500+ farmers. Eat clean, feel healthy." />
+
+  <!-- Scripts -->
+  <script type="module" src="script.js"></script>
+
+  <style>
+    /* Add extra style for category layout */
+    .category-header {
+      padding: var(--space-xl) var(--space-gutter) var(--space-md);
+      background: var(--surface-container-low);
+      text-align: center;
+      margin-bottom: var(--space-lg);
+    }
+    .category-title {
+      color: var(--primary);
+      text-transform: capitalize;
+    }
+    .product-card {
+      background: var(--surface-container-lowest);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--surface-container-highest);
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      height: 100%;
+    }
+    .product-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--primary-container);
+    }
+    .product-card-image {
+      width: 100%;
+      aspect-ratio: 1;
+      overflow: hidden;
+      background: var(--surface-container-low);
+      position: relative;
+    }
+    .product-card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+    .product-card:hover .product-card-image img {
+      transform: scale(1.1);
+    }
+    .product-card-body {
+      padding: var(--space-base);
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      gap: var(--space-xs);
+    }
+    .product-card-body h4 {
+      font-family: 'Manrope', sans-serif;
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: var(--space-xs);
+    }
+    .product-desc {
+      color: var(--on-surface-variant);
+      font-size: 0.9rem;
+      line-height: 1.5;
+      margin-bottom: var(--space-sm);
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      font-weight: 450;
+    }
+    .product-tag {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(4px);
+      color: var(--primary);
+      padding: 4px 10px;
+      border-radius: var(--radius-sm);
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      box-shadow: var(--shadow-sm);
+    }
+    .product-card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: auto;
+      padding-top: var(--space-base);
+      border-top: 1px solid var(--surface-container);
+    }
+    .product-price {
+      font-weight: 700;
+      color: var(--secondary);
+      font-size: 1.1rem;
+    }
+    .btn-buy-now {
+      background: var(--primary);
+      color: white;
+      padding: 10px 20px;
+      border-radius: var(--radius-lg);
+      font-size: 0.85rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .btn-buy-now:hover {
+      background: var(--primary-container);
+    }
+    #loading-msg {
+      text-align: center;
+      padding: var(--space-xl) 0;
+      color: var(--primary);
+      font-weight: 600;
+      font-size: 20px;
+      letter-spacing: -0.01em;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner container">
+      <div class="header-brand">
+        <a href="index.html" style="display:flex; align-items:center; gap:8px;">
+          <img alt="Belagavi Organics Logo" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCnX6jtFx39-dJmpCmrT331MR8khtFfvnOaiSLMH-BUO-fsnzZtpR3ttpfnKH1fbXSmJyNKmCo4Xj84fjisEDKplD6NWe8-HHnKGqvzBq_24cDg0GUk89oFAj0SDj5GPY50YYNHTHG-J94oAjgidlEwBJXZSsUzT-BO0jomzWAcwRohtcmVBMcz90_QabR5usaTQJSNjYrVCObpANRvKqYaYlRcBJJcBoErn0QVmBdRcKNRNYvraRD9NABATZiBVII-zAIwnYCEiWQ" />
+          <span>Belagavi Organics</span>
+        </a>
+      </div>
+
+      <nav class="header-nav" id="desktop-nav">
+        <a href="index.html#mission" data-i18n="nav_mission">Our Mission</a>
+        <a href="index.html#products" class="active" data-i18n="nav_range">Organic Range</a>
+        <a href="index.html#community" data-i18n="nav_network">Farmers Network</a>
+        <a href="index.html#footer" data-i18n="nav_contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="language-dropdown">
+          <button class="btn-lang" id="btn-lang">
+            <span class="material-symbols-outlined">language</span>
+            <span>English</span>
+            <span class="material-symbols-outlined">expand_more</span>
+          </button>
+          <div class="lang-menu" id="lang-menu">
+            <a href="#" data-lang="en">English</a>
+            <a href="#" data-lang="hi">Hindi (हिन्दी)</a>
+            <a href="#" data-lang="mr">Marathi (मराठी)</a>
+            <a href="#" data-lang="kn">Kannada (ಕನ್ನಡ)</a>
+          </div>
+        </div>
+        <!-- Back to Home -->
+        <button class="btn-shop-now btn-shop-now-desktop" data-i18n="btn_back_home" onclick="window.location.href='index.html'">Back to Home</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ MAIN ============ -->
+  <main>
+    <section class="category-header">
+      <h1 class="font-display-lg category-title" id="page-title" data-i18n="loading">Loading...</h1>
+      <p class="font-body-lg text-on-surface-variant mt-sm" data-i18n="category_subtitle">Pure Goodness from Nature's Heart</p>
+    </section>
+
+    <section class="section-products">
+      <div id="loading-msg">Fetching products from our farm...</div>
+      <!-- dynamic content injected here -->
+      <div class="products-grid" id="category-grid"></div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer" id="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="footer-brand-name">Belagavi Organics</span>
+        <p>
+          Manufactured &amp; Marketed by:<br />
+          Belagavi District Regional Co-Op. Organic Farmers Associations Federation Ltd. Belagavi.<br /><br />
+          <strong>Visit Us:</strong><br />
+          IAT Building. Joint director of agriculture Premises,<br />
+          Near RTO circle, Shivaji Nagar, Belagavi - 590016
+        </p>
+      </div>
+      <nav class="footer-nav" style="flex-direction: column; align-items: flex-end;">
+        <p style="text-align: right; color: var(--on-surface-variant); font-size: 14px; line-height: 1.6;">
+          <strong>Contact Us:</strong><br />
+          Maruti Mellikeri | +91 8884063030<br />
+          omfbelagavi@gmail.com<br /><br />
+          <strong>Working Hours:</strong><br />
+          Mon – Fri: 8:00 AM – 6:00 PM<br />
+          Sat: 9:00 AM – 4:00 PM<br />
+          Sun: Closed
+        </p>
+        <div style="display: flex; gap: 16px; margin-top: 12px;">
+          <a href="https://instagram.com/YourInstagramID" target="_blank" title="Instagram">Instagram</a>
+          <a href="https://facebook.com/YourFacebookPage" target="_blank" title="Facebook">Facebook</a>
+          <a href="#" id="btn-share" title="Share Website">Share Site</a>
+        </div>
+      </nav>
+    </div>
+    <div class="footer-copyright">
+      © 2024 Belagavi District Regional Co-Op. Organic Farmers Associations Federation Ltd.
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      const category = urlParams.get('c');
+      if (category) {
+        // Set page title (if not already handled by fetchProducts internally)
+        const titleEl = document.getElementById('page-title');
+        if (titleEl) {
+          titleEl.textContent = category.charAt(0).toUpperCase() + category.slice(1);
+          titleEl.setAttribute('data-category', category); 
+        }
+        fetchProducts(category);
+      } else {
+        window.location.href = 'index.html#products';
+      }
+    });
+  </script>
+</body>
+</html>
