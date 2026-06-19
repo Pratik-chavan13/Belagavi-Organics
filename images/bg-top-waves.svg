@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200" preserveAspectRatio="none">
+  <!-- Solid orange background at top -->
+  <rect width="1440" height="80" fill="#df7822" />
+  <!-- Orange wave 1 -->
+  <path fill="#df7822" d="M0,80 C360,140 1080,20 1440,80 L1440,0 L0,0 Z" />
+  <!-- Green wave -->
+  <path fill="#1b4332" d="M0,80 C360,140 1080,20 1440,80 L1440,100 C1080,40 360,160 0,100 Z" />
+  <!-- Orange wave 2 -->
+  <path fill="#df7822" d="M0,100 C360,160 1080,40 1440,100 L1440,110 C1080,50 360,170 0,110 Z" />
+</svg>
